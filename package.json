@@ -1,0 +1,39 @@
+{
+  "name": "@stdlib/array-uint16",
+  "version": "0.0.0",
+  "description": "Uint16Array.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/array-uint16.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "array",
+    "typed",
+    "typed array",
+    "typed-array",
+    "uint16array",
+    "uint16",
+    "uint16_t",
+    "integer",
+    "int",
+    "uint",
+    "unsigned",
+    "short"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
