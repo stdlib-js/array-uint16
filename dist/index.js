@@ -1,7 +1,8 @@
-/*
+"use strict";var e=function(u,r){return function(){return r||u((r={exports:{}}).exports,r),r.exports}};var o=e(function(y,i){"use strict";var a=typeof Uint16Array=="function"?Uint16Array:void 0;i.exports=a});var s=e(function(q,n){"use strict";function l(){throw new Error("not implemented")}n.exports=l});var p=require("@stdlib/assert-has-uint16array-support"),c=o(),f=s(),t;p()?t=c:t=f;module.exports=t;
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2018 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -15,12 +16,4 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-// TypeScript Version: 4.1
-
-// EXPORTS //
-
-/**
-* Typed array constructor which returns a typed array representing an array of 16-bit unsigned integers in the platform byte order.
-*/
-export = Uint16Array;
+//# sourceMappingURL=index.js.map
