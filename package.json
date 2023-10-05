@@ -37,7 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-uint16array-support": "^0.1.1"
+    "@stdlib/assert-has-uint16array-support": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-has-property": "^0.1.1",
