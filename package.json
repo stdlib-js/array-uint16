@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-uint16",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Uint16Array.",
   "license": "Apache-2.0",
   "author": {
@@ -51,7 +51,7 @@
     "@stdlib/math-base-special-round": "^0.1.1",
     "@stdlib/random-base-randi": "^0.1.0",
     "@stdlib/random-base-randu": "^0.1.0",
-    "@stdlib/symbol-iterator": "^0.1.0",
+    "@stdlib/symbol-iterator": "^0.1.1",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
