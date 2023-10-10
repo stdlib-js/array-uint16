@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
+import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@v0.1.1-deno/mod.js';
 ```
 
 #### Uint16Array()
@@ -1409,7 +1409,7 @@ var bool = it.next().done;
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import ctor from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
+import ctor from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@v0.1.1-deno/mod.js';
 
 var arr;
 var i;
