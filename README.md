@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-uint16
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/index.mjs';
+var Uint16Array = require( '@stdlib/array-uint16' );
 ```
 
 #### Uint16Array()
@@ -84,7 +100,7 @@ Creates a [typed array][mdn-typed-array] from another [typed array][mdn-typed-ar
 <!-- eslint-disable stdlib/require-globals -->
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
+var Float32Array = require( '@stdlib/array-float32' );
 
 var arr1 = new Float32Array( [ 5.0, 5.0, 5.0 ] );
 var arr2 = new Uint16Array( arr1 );
@@ -109,7 +125,7 @@ Returns a [typed array][mdn-typed-array] view of an [`ArrayBuffer`][@stdlib/arra
 <!-- eslint-disable stdlib/require-globals -->
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var buf = new ArrayBuffer( 8 );
 var arr = new Uint16Array( buf, 0, 4 );
@@ -1406,15 +1422,10 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import ctor from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var ctor = require( '@stdlib/array-uint16' );
 
 var arr;
 var i;
@@ -1424,10 +1435,6 @@ for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = round( randu()*100.0 );
 }
 console.log( arr );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -1473,7 +1480,7 @@ console.log( arr );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -1503,8 +1510,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-uint16.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-uint16
 
-[test-image]: https://github.com/stdlib-js/array-uint16/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/array-uint16/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/array-uint16/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/array-uint16/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-uint16/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-uint16?branch=main
@@ -1537,23 +1544,23 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/esm
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16/tree/esm
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/esm
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
-[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8/tree/esm
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/esm
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/esm
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
 
-[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c/tree/esm
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
 
 <!-- </related-links> -->
 
