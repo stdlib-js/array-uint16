@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-uint16
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-Uint16Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var Uint16Array = require( 'path/to/vendor/umd/array-uint16/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.Uint16Array;
-})();
-</script>
+var Uint16Array = require( '@stdlib/array-uint16' );
 ```
 
 #### Uint16Array()
@@ -268,8 +262,8 @@ var arr = Uint16Array.from( [ 1, 2 ], mapFcn );
 
 A callback function is provided two arguments:
 
--   `value`: source value
--   `index`: source index
+-   `value`: source value.
+-   `index`: source index.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -402,9 +396,9 @@ var bool = arr.every( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -521,9 +515,9 @@ var arr2 = arr1.filter( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -583,9 +577,9 @@ var v = arr.find( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -646,9 +640,9 @@ var idx = arr.findIndex( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -701,9 +695,9 @@ console.log( str );
 
 The callback is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -918,9 +912,9 @@ var arr2 = arr1.map( fcn );
 
 A callback is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -982,10 +976,10 @@ var v = arr.reduce( fcn, 0 );
 
 A callback is provided four arguments:
 
--   `acc`: accumulated result
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `acc`: accumulated result.
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 <a name="method-reduce-right"></a>
 
@@ -1025,10 +1019,10 @@ var v = arr.reduce( fcn, 0 );
 
 A callback is provided four arguments:
 
--   `acc`: accumulated result
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `acc`: accumulated result.
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 <a name="method-reverse"></a>
 
@@ -1201,9 +1195,9 @@ var bool = arr.some( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -1430,15 +1424,10 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var ctor = require( '@stdlib/array-uint16' );
 
 var arr;
 var i;
@@ -1448,11 +1437,6 @@ for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = round( randu()*100.0 );
 }
 console.log( arr );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -1515,7 +1499,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -1565,23 +1549,23 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16/tree/umd
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
-[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8/tree/umd
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/umd
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
 
-[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c/tree/umd
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
 
 <!-- </related-links> -->
 
