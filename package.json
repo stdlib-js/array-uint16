@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-uint16",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Uint16Array.",
   "license": "Apache-2.0",
   "author": {
@@ -37,20 +37,20 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-uint16array-support": "^0.2.2"
+    "@stdlib/assert-has-uint16array-support": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/assert-has-property": "^0.2.2",
-    "@stdlib/assert-is-arraybuffer": "^0.2.2",
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
-    "@stdlib/assert-is-uint16array": "^0.2.2",
+    "@stdlib/assert-has-property": "^0.2.3",
+    "@stdlib/assert-is-arraybuffer": "^0.2.3",
+    "@stdlib/assert-is-boolean": "^0.2.3",
+    "@stdlib/assert-is-function": "^0.2.3",
+    "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
+    "@stdlib/assert-is-uint16array": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/math-base-special-round": "^0.3.0",
-    "@stdlib/random-base-randi": "^0.2.1",
-    "@stdlib/random-base-randu": "^0.2.1",
-    "@stdlib/symbol-iterator": "^0.2.2",
+    "@stdlib/math-base-special-round": "^0.3.1",
+    "@stdlib/random-base-randi": "^0.2.2",
+    "@stdlib/random-base-randu": "^0.2.2",
+    "@stdlib/symbol-iterator": "^0.2.3",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
